@@ -1,3 +1,5 @@
 # php_for_life
-#### 为了生活学习php
-#### 非基础课程！
+
+学习之余，留作记录
+
+By TinyMing-GO
