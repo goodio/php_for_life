@@ -1,10 +1,10 @@
-### 字符匹配场景
+## 字符匹配场景
 
 字符串匹配是计算机的基本任务之一。举例来说，有一个字符串"BBC ABCDAB ABCDABCDABDE"，我想知道，里面是否包含另一个字符串"ABCDABD"？
 
 许多算法可以完成这个任务，Knuth-Morris-Pratt算法（简称**KMP**）是最常用的之一。它以三个发明者命名，起头的那个K就是著名科学家Donald Knuth。
 
-#### 图解KMP算法
+## 图解KMP算法
 
 我们要在字符串"<font color=red>BBC ABCDAB ABCDABCDABDE</font>"的中判断是否包含字符串"<font color=red>ABCDABD</font>"。我们将ABCDABD称之为<font color=red>搜索词</font>。
 
@@ -60,7 +60,7 @@
 
 逐位比较，直到搜索词的最后一位，发现完全匹配，于是搜索完成。如果还要继续搜索（即找出全部匹配），移动位数 = 7 - 0，再将搜索词向后移动7位，这里就不再重复了。
 
-#### 部分匹配表的产生
+##  部分匹配表的产生
 
 下面介绍《部分匹配表》是如何产生的。首先，要了解两个概念："<font color=red>前缀</font>"和"<font color=red>后缀</font>"。
 "前缀"指除了最后一个字符以外，一个字符串的全部头部组合；
