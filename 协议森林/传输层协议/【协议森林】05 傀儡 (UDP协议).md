@@ -20,7 +20,7 @@ UDP(User Datagram Protocol)传输与IP传输非常类似。你可以将UDP协议
 
 ![](../images/udp_3.webp)
 
-==上面的**Source port**和**Destination port**分别为**UDP包**的**出发端口**和**目的地端口**。**Length为整个UDP包的*长度**。==
+```diff +上面的**Source port**和**Destination port**分别为**UDP包**的**出发端口**和**目的地端口**。**Length为整个UDP包的*长度**```。
 
 checksum的算法与IP协议的header checksum算法（戳我）相类似。不同的是，UDP的checksum所校验的序列包括了整个UDP数据包，以及封装的IP头部的一些信息(主要为出发地IP和目的地IP)。这样，<font color=red>checksum就可以校验IP : 端口的正确性了</font>。在IPv4中，checksum可以为0，意味着不使用checksum。IPv6要求必须进行checksum校验。
 
